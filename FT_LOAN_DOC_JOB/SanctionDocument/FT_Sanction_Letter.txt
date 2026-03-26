@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANCTION LETTER</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body
+    style="background-color: #f0f0f0;background-size: cover;background-position: center;padding: 0;margin: 0;font-family: Arial, sans-serif;">
+
+    <div class="d-flex justify-content-center">
+        <div
+            style=" width: 100%;max-width: 210mm;height: 100%;background-color: rgba(255, 255, 255, 0.9);box-sizing: border-box;border: 1px solid #ddd;">
+            <div>
+                <a href="#">
+                     <img src="D:\Images\header.png" alt="logo" style="width:100%;">
+                </a>
+            </div>
+            <div
+                style="text-align:center;font-size: 18px; font-weight: bold;margin-bottom: 30px;margin:-17px auto;padding: 58px;">
+                <p style="margin-bottom: 6px;">SANCTION LETTER</p>
+                <p style="margin-bottom: 4px;">cum</p>
+                <p style="margin-bottom: 11px;">KEY FACT STATEMENT</p>
+            </div>
+            <div class="p-lg"
+                style=" font-size: 14px;line-height: 1.6;margin-bottom: 30px;margin:-43px auto;padding: 50px;">
+                <p style="margin-bottom: 15px;text-align:right;">Date: <b>[current_date]</b></p>
+                <p style="margin-bottom: 15px;"><strong>Dear,</strong></p>
+                <p>
+                    <strong>Name:</strong> [name]<br>
+                    <strong>Address:</strong> [address]<br>
+                    <strong>Mobile No:</strong> [mobile_number]<br>
+                    <strong>E-mail ID:</strong> [email_id]
+                </p>
+                <h2 style="text-decoration: underline; font-size: 18px;">Sub: Credit line facility from Salora Capital
+                    Limited </h2>
+                <p>
+                    This in-principal sanction letter ("Sanction Letter") cum Key Fact Statement ("KFS") outlines the
+                    principal terms and
+                    conditions with respect to the credit line facility to be provided by <strong>Salora Capital
+                        Limited</strong>.
+                    Please note that this in-principal sanction is based on your application for the credit line and the
+                    Lenders reserve the right to
+                    revoke this sanction in case of any misrepresentation or inaccuracy in the information provided by
+                    you. The sanction of the
+                    credit line is subject to <strong>know-your-customer (KYC)</strong> and other necessary verification
+                    of the Borrower(s). With reference to
+                    your application dated [upcoming_lead_date], we hereby offer/sanction you the loan on the following
+                    terms and conditions:
+                </p>
+                <table style="width: 100%; border-collapse: collapse; border: 1px solid black;">
+                    <thead>
+                        <tr>
+                            <th
+                                style=" padding: 12px;text-align: left;border: 1px solid #ddd;background-color: #0073e6;color: white;">
+                                S. No.</th>
+                            <th
+                                style=" padding: 12px;text-align: left;border: 1px solid #ddd;background-color: #0073e6;color: white;">
+                                Parameter</th>
+                            <th
+                                style=" padding: 12px;text-align: left;border: 1px solid #ddd;background-color: #0073e6;color: white;">
+                                Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td
+                                style="border: 1px solid black; text-align: left; font-weight: bold; padding: 5px; background-color: #f2f2f2;">
+                                A.</td>
+                            <td colspan="2"
+                                style="border: 1px solid black; text-align: left; font-weight: bold; padding: 5px; background-color: #f2f2f2;text-align:center;">
+                                Transaction Details</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">1</td>
+                            <td style="border: 1px solid black; padding: 5px;">Sanctioned Amount (INR)</td>
+                            <td style="border: 1px solid black; padding: 5px;">[amount]</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">2</td>
+                            <td style="border: 1px solid black; padding: 5px;">Total Interest Charged (%)</td>
+                            <td style="border: 1px solid black; padding: 5px;">[interest_rate]% per DAYS</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">3</td>
+                            <td style="border: 1px solid black; padding: 5px;">Processing Fee</td>
+                            <td style="border: 1px solid black; padding: 5px;">[processing_fee]</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;"></td>
+                            <td style="border: 1px solid black; padding: 5px;">GST</td>
+                            <td style="border: 1px solid black; padding: 5px;">[gst]</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;"></td>
+                            <td style="border: 1px solid black; padding: 5px;">Insurance (if any)</td>
+                            <td style="border: 1px solid black; padding: 5px;">[insurance]</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;"></td>
+                            <td style="border: 1px solid black; padding: 5px;">Other upfront charges (if any)</td>
+                            <td style="border: 1px solid black; padding: 5px;">NA</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">4</td>
+                            <td style="border: 1px solid black; padding: 5px;">Net Disbursed Amount (INR)</td>
+                            <td style="border: 1px solid black; padding: 5px;">[disbursed_amount]</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">5</td>
+                            <td style="border: 1px solid black; padding: 5px;">Annual Percentage Rate (APR%)</td>
+                            <td style="border: 1px solid black; padding: 5px;">[apr_calculate] %</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">6</td>
+                            <td style="border: 1px solid black; padding: 5px;">Total Amount to be repaid (INR)<span
+                                    style="color:red;font-weight: bold;"> *</span></td>
+                            <td style="border: 1px solid black; padding: 5px;">[installement_amount] </td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">7</td>
+                            <td style="border: 1px solid black; padding: 5px;">Repayment Tenure DAYS<span
+                                    style="color:red ; font-weight: bold;"> *</span></td>
+                            <td style="border: 1px solid black; padding: 5px;">[tenure]</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">8</td>
+                            <td style="border: 1px solid black; padding: 5px;">Repayment Date</td>
+                            <td style="border: 1px solid black; padding: 5px;">[repayment_date]</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">9</td>
+                            <td style="border: 1px solid black; padding: 5px;">Repayment frequency of borrower</td>
+                            <td style="border: 1px solid black; padding: 5px;">Bulletpayment</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">10</td>
+                            <td style="border: 1px solid black; padding: 5px;">Number of installments of payments</td>
+                            <td style="border: 1px solid black; padding: 5px;">1</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; text-align: left; font-weight: bold; padding: 5px;">
+                                </td>
+                            <td colspan="2"
+                                style="border: 1px solid black; text-align: left; font-weight: bold; padding: 5px;">
+                                <span style="color:red ; font-weight: bold;">*</span> Tenure & Repayment amount is
+                                subjected to disbursal date
+                            </td>
+                        </tr>
+                        <tr>
+                            <td
+                                style="border: 1px solid black; text-align: left; font-weight: bold; padding: 5px; background-color: #f2f2f2;">
+                                B.</td>
+                            <td colspan="2"
+                                style="border: 1px solid black; text-align: left; font-weight: bold; padding: 5px; background-color: #f2f2f2;text-align:center;">
+                                Details about Contingency Charges</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">11</td>
+                            <td style="border: 1px solid black; padding: 5px;">Amount of installment (INR)</td>
+                            <td style="border: 1px solid black; padding: 5px;">[installement_amount]</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">12</td>
+                            <td style="border: 1px solid black; padding: 5px;">Rate of Annualized Penal charges in case
+                                of delayed payments, if any</td>
+                            <td style="border: 1px solid black; padding: 5px;">91.25%</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">13</td>
+                            <td style="border: 1px solid black; padding: 5px;">Rate of Annualized Other Penal Charges,
+                                if any</td>
+                            <td style="border: 1px solid black; padding: 5px;">0.0%</td>
+                        </tr>
+                        <tr>
+                            <td
+                                style="border: 1px solid black; text-align: left; font-weight: bold; padding: 5px; background-color: #f2f2f2;">
+                                C.</td>
+                            <td colspan="2"
+                                style="border: 1px solid black; text-align: left; font-weight: bold; padding: 5px; background-color: #f2f2f2;text-align:center;">
+                                Other Disclosures</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">14</td>
+                            <td style="border: 1px solid black; padding: 5px;">Cooling-Off/Look-Up Period</td>
+                            <td style="border: 1px solid black; padding: 5px;">NA</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">15</td>
+                            <td style="border: 1px solid black; padding: 5px;">Recovery agent authorized to approach the
+                                borrower</td>
+                            <td style="border: 1px solid black; padding: 5px;">NA</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">16</td>
+                            <td style="border: 1px solid black; padding: 5px;">Other Conditions</td>
+                            <td style="border: 1px solid black; padding: 5px;">
+                                <ul>
+                                    <li>You can make an early
+                                        repayment of the amounts
+                                        due under this loan, in part
+                                        or in full, at any time. </li>
+                                    <li>We may collect amounts
+                                        payable by You on our
+                                        behalf using the National 
+                                        Automated Clearing House mandate or similar payment
+                                        mandates provided by You. </li>
+                                    <li>You authorize Salora Capital
+                                        Limited to debit your bank
+                                        account for repayment of
+                                        principal, interest, fees, or
+                                        charges as per the
+                                        repayment schedule. </li>
+                                    <li>You are responsible for
+                                        ensuring sufficient funds in
+                                        your account to honour the
+                                        mandates. </li>
+                                    <li>Non-payment of amounts
+                                        due on the relevant due
+                                        dates may have adverse
+                                        consequences including: (i)
+                                        having your details reported
+                                        to the credit bureaus; and
+                                        (ii) suitable legal action as
+                                        may be necessary to
+                                        recover the outstanding
+                                        amounts. </li>
+                                    <li>All notices regarding
+                                        repayment, default, or
+                                        other matters may be
+                                        communicated via SMS,
+                                        email, or through the digital
+                                        lending application.</li>
+                                    <li>You are responsible for
+                                        keeping your contact
+                                        information updated in the
+                                        system</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 5px;">16</td>
+                            <td style="border: 1px solid black; padding: 5px;">Nodal Grievance Officers</td>
+                            <td style="border: 1px solid black; padding: 5px;">
+								Mr. Prakash Parihar <br/>
+                        </tr>
+                         <tr>
+                            <td style="border: 1px solid black; padding: 5px;"></td>
+                            <td colspan="2" style="border: 1px solid black;text-align:center;"><br />
+                                <p style="text-decoration: underline"><strong>For Salora Capital Limited </strong><br></p>
+                                <p style="color:darkblue;text-decoration: underline">For raising any grievances reach
+                                    out to:
+                                    Email: grievance@saloracapital.com<br></p>
+                                <p style="color:darkblue;">Phone: 9289119401<br></p>
+                                <p style="color:darkcyan;">Address:Unit no 421, 4th Floor, MGF Metropolis Mall, MG Road, Gurgaon, Haryana-122001,<br></p>
+                                <p style="color:darkcyan;">, Gurgaon, Haryana-122001<br><br></p>
+                                <p style="text-decoration: underline"><strong>If unsatisfied, escalate to:</strong><br>
+                                </p>
+                                <p><strong>Name:</strong> Amit Kumar <br></p>
+                                <p><strong>Email:</strong>  grievance@saloracapital.com<br></p>
+								<p><strong>Contact:</strong>  9289119401<br></p>
+                                <p style="color:darkcyan;">Address:Unit no 421, 4th Floor, MGF Metropolis Mall, MG Road, Gurgaon, Haryana-122001,<br></p>
+                                <p style="color:darkcyan;">, Gurgaon, Haryana-122001</p>
+                            </td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </div>
+            <div style="margin:20px 50px;">
+                [emi_schedule_table]
+            </div>
+            <div style="margin-top: 260px">
+                <a href="index.html">
+                    <img src="D:\Images\footer.png" alt="logo" style="width:100%;">
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Optional: Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
