@@ -289,7 +289,7 @@ namespace SanctionApplication
                                         Please address this at the earliest.
                                     </div>
                                     <div style='font-size: 14px; color: #666; border-top: 1px solid #ddd; padding-top: 10px;'>
-                                        Thank you,<br>Team EarlyWages<br><br>
+                                        Thank you,<br>Team Fynto<br><br>
                                         <em>Disclaimer: This is a system-generated email. No reply is required.</em>
                                  </div>
                                 </div>
@@ -318,7 +318,7 @@ namespace SanctionApplication
                                         Please address this at the earliest.
                                     </div>
                                     <div style='font-size: 14px; color: #666; border-top: 1px solid #ddd; padding-top: 10px;'>
-                                        Thank you,<br>Team PaisaUdhar<br><br>
+                                        Thank you,<br>Team Fynto<br><br>
                                         <em>Disclaimer: This is a system-generated email. No reply is required.</em>
                                  </div>
                                 </div>

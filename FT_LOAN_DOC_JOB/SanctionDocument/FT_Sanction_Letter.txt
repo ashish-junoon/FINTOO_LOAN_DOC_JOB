@@ -17,7 +17,7 @@
             style=" width: 100%;max-width: 210mm;height: 100%;background-color: rgba(255, 255, 255, 0.9);box-sizing: border-box;border: 1px solid #ddd;">
             <div>
                 <a href="#">
-                     <img src="D:\Images\header.png" alt="logo" style="width:100%;">
+                     <img src="https://fynto.in/images/header.png" alt="logo" style="width:100%;">
                 </a>
             </div>
             <div
@@ -276,7 +276,7 @@
             </div>
             <div style="margin-top: 260px">
                 <a href="index.html">
-                    <img src="D:\Images\footer.png" alt="logo" style="width:100%;">
+                    <img src="https://fynto.in/images/footer.png" alt="logo" style="width:100%;">
                 </a>
             </div>
         </div>

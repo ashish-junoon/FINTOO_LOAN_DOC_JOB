@@ -11,7 +11,7 @@
         <div  style=" width: 100%;max-width: 210mm;height: 100%;background-color: rgba(255, 255, 255, 0.9);">
             <div>
                 <a href="">
-                    <img src="D:\Images\header.png" alt="logo" style="width:100%;">
+                    <img src="https://fynto.in/images/header.png" alt="logo" style="width:100%;">
                 </a>
             </div>
             <div style="text-align:center;font-size: 18px; font-weight: bold;margin-bottom: 30px;margin:-17px auto;padding: 58px;">
@@ -921,7 +921,7 @@
 			  </tr>
 			  <tr>
 				<td style="border: 1px solid #333; padding: 8px;">Application ID</td>
-				<td style="border: 1px solid #333; padding: 8px;"></td>
+				<td style="border: 1px solid #333; padding: 8px;">[loan_id]</td>
 			  </tr>
 			  <tr>
 				<td style="border: 1px solid #333; padding: 8px;">Date of Execution</td>
@@ -985,7 +985,7 @@
 			  </tr>
 			  <tr>
 				<td style="border: 1px solid #333; padding: 8px;">Insurance Charges</td>
-				<td style="border: 1px solid #333; padding: 8px;">NA</td>
+				<td style="border: 1px solid #333; padding: 8px;">[insurance_rate]</td>
 			  </tr>
 			  <tr>
 				<td style="border: 1px solid #333; padding: 8px;">Payment Bounce Charges</td>
@@ -1053,7 +1053,7 @@
 				  </tr>
 				  <tr>
 					<td style="border: 1px solid #333; padding: 8px;">Residence is</td>
-					<td style="border: 1px solid #333; padding: 8px;">-NA</td>
+					<td style="border: 1px solid #333; padding: 8px;">NA</td>
 				  </tr>
 				  <tr>
 					<td style="border: 1px solid #333; padding: 8px;">Residence since</td>
@@ -1126,7 +1126,7 @@
 				  </tr>
 				  <tr>
 					<td style="border: 1px solid #333; padding: 8px;">Vendor/Service Provider</td>
-					<td style="border: 1px solid #333; padding: 8px;">NA</td>
+					<td style="border: 1px solid #333; padding: 8px;">Fynto</td>
 				  </tr>
 				  <tr>
 					<td style="border: 1px solid #333; padding: 8px;">Lending Service Provider</td>
@@ -1140,7 +1140,7 @@
             </div>
              <div style="margin-top: 110px">
                 <a href="">
-                    <img src="D:\Images\footer.png" alt="logo" style="width:100%;">
+                    <img src="https://fynto.in/images/footer.png" alt="logo" style="width:100%;">
                 </a>
             </div>
         </div>
