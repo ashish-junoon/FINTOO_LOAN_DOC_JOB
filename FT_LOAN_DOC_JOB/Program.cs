@@ -21,12 +21,21 @@ class Program
         logger.Info($"Application started...{DateTime.Now}");  
         try
         {
-           // string rootPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+            // string rootPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
             string[] folders = {
                Path.Combine(RootPath, "AgreementDocument"),
                Path.Combine(RootPath, "DisbursalDocument"),
                Path.Combine(RootPath, "SanctionDocument")
            };
+
+            foreach (var folder in folders)
+            {
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+            }
+
             DeleteFiles(folders);
             RunMainCode();
         }
@@ -72,7 +81,7 @@ class Program
     {
         try
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["CrediCash_Dev"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             if (!string.IsNullOrEmpty(connectionString))
             {
                 List<InformationModel> informationModels = GetIncompleteData(connectionString);

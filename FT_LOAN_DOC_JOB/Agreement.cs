@@ -1,25 +1,26 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using iText.Html2pdf;
-using iText.Kernel.Pdf;
+﻿using iText.Html2pdf;
 using iText.Kernel.Geom;
+using iText.Kernel.Pdf;
 using iText.Layout;
-using Path = System.IO.Path;
-using System.Configuration;
-using System.Data.SqlClient;
-using System.Data;
 using LMS_DL;
-using static SanctionApplication.Disbursal;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
 using System.Data.Common;
+using System.Data.SqlClient;
 using System.Globalization;
+using System.IO;
+using System.Text;
+using static SanctionApplication.Disbursal;
+using Path = System.IO.Path;
 
 namespace SanctionApplication
 {
     public class Agreement
     {
         private static readonly NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
-        #region Agreement Logic -------------------------*****************
+        #region Agreement Logic -----------------------------*****************
         public static void AgreementProcedure(string connectionString, InformationModel information)
         {
             string documentname = "Agreement document";
@@ -43,7 +44,14 @@ namespace SanctionApplication
                         logger.Info($"txtFilePath path - {txtFilePath}");
                         if (File.Exists(txtFilePath))
                         {
-                            string txtContent = File.ReadAllText(txtFilePath);
+                            string txtContent = File.ReadAllText(txtFilePath, Encoding.UTF8);
+                            //string txtContent = File.ReadAllText(txtFilePath, Encoding.Default);
+                            //txtContent = txtContent
+                            // .Replace("“", "\"")
+                            // .Replace("”", "\"")
+                            // .Replace("‘", "'")
+                            // .Replace("’", "'")
+                            // .Replace("�", "\""); 
                             Dictionary<string, string> replacements = AgreementGetReplacementData(_agreement);
                             foreach (var entry in replacements)
                             {
@@ -107,7 +115,6 @@ namespace SanctionApplication
                 { "[account_number]", string.IsNullOrEmpty(sanctionLetter.account_number) ? "N/A" : sanctionLetter.account_number },
                 { "[disbursement_account_number]", string.IsNullOrEmpty(sanctionLetter.account_number) ? "N/A" : sanctionLetter.account_number },
                 { "[ifsc_code]", string.IsNullOrEmpty(sanctionLetter.ifsc_code) ? "N/A" : sanctionLetter.ifsc_code },
-                { "[ifse_code]", string.IsNullOrEmpty(sanctionLetter.ifsc_code) ? "N/A" : sanctionLetter.ifsc_code },
                 { "[net_monthly_salary]", string.IsNullOrEmpty(sanctionLetter.net_monthly_salary) ? "N/A" : sanctionLetter.net_monthly_salary },
                 { "[employee_salary]", string.IsNullOrEmpty(sanctionLetter.net_monthly_salary) ? "N/A" : sanctionLetter.net_monthly_salary },
                 { "[Loan_amount]", string.IsNullOrEmpty(sanctionLetter.Loan_amount) ? "N/A" : sanctionLetter.Loan_amount },
@@ -194,7 +201,7 @@ namespace SanctionApplication
                             name = row["full_name"]?.ToString() ?? "N/A",
                             father_name = row["father_name"]?.ToString() ?? "N/A",
                             company_name = row["company_name"]?.ToString() ?? "N/A",
-                            company_address = row["company_address"]?.ToString() ?? "N/A",
+                            //company_address = row["address"]?.ToString() ?? "N/A",
                             interest_rate = decimal.TryParse(row["interest_rate"]?.ToString(), out var ir) ? ir : 0,
                             loan_amount = decimal.TryParse(row["loan_amount"]?.ToString(), out var la) ? la : 0,
                             execution_date = row["execution_date"]?.ToString() ?? DateTime.Now.ToString("yyyy-MM-dd"),
@@ -212,13 +219,13 @@ namespace SanctionApplication
                             disbursement_date = row["effective_date"]?.ToString() ?? "N/A",
                             nominee_number = row["nominee_number"]?.ToString() ?? "N/A",
                             nominee_name = row["nominee_name"]?.ToString() ?? "N/A",
-                            processing_fees = row["processing_fees"]?.ToString() ?? "N/A",
+                            processing_fees = row["processing_fee"]?.ToString() ?? "N/A",
                             ip = row["IP"]?.ToString() ?? "N/A",
                             user_id = row["user_id"]?.ToString() ?? "N/A",
                             lead_id = row["lead_id"]?.ToString() ?? "N/A",
                             company_id = row["company_id"]?.ToString() ?? "N/A",
                             product_name = row["product_name"]?.ToString() ?? "N/A",
-                            consent_otp = row["otp"]?.ToString() ?? "N/A",
+                            consent_otp = row["sanction_consent_otp"]?.ToString() ?? "N/A",
                             installment_amount = Convert.ToDecimal(row["installment_amount"]),
                             insurance_rate = Convert.ToDecimal(row["insurance_rate"])
 

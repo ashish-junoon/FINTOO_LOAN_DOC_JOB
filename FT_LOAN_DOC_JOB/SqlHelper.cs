@@ -498,7 +498,7 @@ namespace LMS_DL
                     cmd.Connection.Open();
                     da.Fill(dt);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 { return dt; }
             }
             return dt;

@@ -37,5 +37,7 @@ namespace SanctionApplication
         public string repayment_date { get; set; }
         public string loan_id { get; set; }
         public string APR { get; set; }
+
+
     }
 }

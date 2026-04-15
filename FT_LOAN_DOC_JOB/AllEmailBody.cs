@@ -76,7 +76,7 @@ namespace SanctionApplication
                 " </html>"
             );
         }
-        public static List<string> SendEmail(List<string> pdfAttachmentPaths, string recipientEmail, string user_id, string lead_id, string loan_id,string disbursalProcedure, string emailBody, string subject, string name ,  string ProductCode = "PU")
+        public static List<string> SendEmail(List<string> pdfAttachmentPaths, string recipientEmail, string user_id, string lead_id, string loan_id,string disbursalProcedure, string emailBody, string subject, string name ,  string ProductCode = "FT")
         {
             List<string> successfullyAttachedFiles = new List<string>();
             try

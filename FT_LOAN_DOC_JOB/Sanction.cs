@@ -18,7 +18,7 @@ namespace SanctionApplication
    {
         private static readonly NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         #region Sanction Logic -------------------------*********
-        public static void SanctionProcedure(string connectionString , InformationModel information)
+        public static void SanctionProcedure(string connectionString, InformationModel information)
         {
             try
             {
@@ -27,11 +27,11 @@ namespace SanctionApplication
                     string Agreementpath = string.Empty; string agreement_html_content = string.Empty; string disbursal_html_Content = string.Empty; string sanction_html_content = string.Empty;
                     string disbursapath = string.Empty;
                     string sanctionpath = string.Empty;
-                    List<SanctionModel> sanctionLetterRs = GetSanctionLetter(information , connectionString , ConfigurationManager.AppSettings["SanctionMethodName"]);
+                    List<SanctionModel> sanctionLetterRs = GetSanctionLetter(information, connectionString, ConfigurationManager.AppSettings["SanctionMethodName"]);
                     foreach (var sanctionLetter in sanctionLetterRs)
                     {
-                        (string pdfFilePath, string sanctionhtml_content) = GeneratePdfForSanctionLetter(sanctionLetter , sanction_html_content);
-                        AllEmailBody.DispatchEmail(agreement_html_content, disbursal_html_Content, sanctionhtml_content, Agreementpath, disbursapath, pdfFilePath, sanctionLetter.email_id, sanctionLetter.user_id, sanctionLetter.lead_id, information.loan_id, sanctionLetter.name , ConfigurationManager.AppSettings["SanctionMethodName"]);
+                        (string pdfFilePath, string sanctionhtml_content) = GeneratePdfForSanctionLetter(sanctionLetter, sanction_html_content);
+                        AllEmailBody.DispatchEmail(agreement_html_content, disbursal_html_Content, sanctionhtml_content, Agreementpath, disbursapath, pdfFilePath, sanctionLetter.email_id, sanctionLetter.user_id, sanctionLetter.lead_id, information.loan_id, sanctionLetter.name, ConfigurationManager.AppSettings["SanctionMethodName"]);
                     }
                 }
                 else
@@ -44,7 +44,7 @@ namespace SanctionApplication
                 logger.Error("An error occurred: " + ex.Message);
             }
         }
-        
+
         public static (string pdfFilePath, string sanction_html_content) GeneratePdfForSanctionLetter(SanctionModel sanctionLetter, string sanction_html_content)
         {
             string rootPath = ConfigurationManager.AppSettings["RootDirectory"].ToString();
@@ -52,11 +52,12 @@ namespace SanctionApplication
             {
                 //string rootPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
                 string sanctionDocumentPath = Path.Combine(rootPath, "SanctionDocument");
-                string txtFilePath = Path.Combine(sanctionDocumentPath, $"EW_Sanction_letter.txt");
+
+                string txtFilePath = Path.Combine(sanctionDocumentPath, $"FT_Sanction_letter.txt");
 
                 logger.Info($"SanctionDocument Letter Root Path - {rootPath}");
                 logger.Info($"SanctionDocument SanctionDocument Root Path - {sanctionDocumentPath}");
-                logger.Info($"EW_Sanction_letter SanctionDocument Root Path - {txtFilePath}");
+                logger.Info($"FT_Sanction_letter SanctionDocument Root Path - {txtFilePath}");
 
                 if (!File.Exists(txtFilePath))
                 {
@@ -76,11 +77,11 @@ namespace SanctionApplication
                 sanction_html_content = $@"{txtContent}";
 
                 string userFileName = sanctionLetter.lead_id.Replace(" ", "_");
-                string htmlFilePath = Path.Combine(sanctionDocumentPath, $"{userFileName}_EW_sanction_letter.html");
-                string pdfFilePath = Path.Combine(sanctionDocumentPath, $"{userFileName}_EW_sanction_letter.pdf");
+                string htmlFilePath = Path.Combine(sanctionDocumentPath, $"{userFileName}_FT_sanction_letter.html");
+                string pdfFilePath = Path.Combine(sanctionDocumentPath, $"{userFileName}_FT_sanction_letter.pdf");
 
                 logger.Info($"SanctionDocument SanctionDocument htmlFilePath Path - {htmlFilePath}");
-                logger.Info($"EW_Sanction_letter SanctionDocument pdfFilePath Path - {pdfFilePath}");
+                logger.Info($"FT_Sanction_letter SanctionDocument pdfFilePath Path - {pdfFilePath}");
 
                 File.WriteAllText(htmlFilePath, sanction_html_content);
 
@@ -225,7 +226,7 @@ namespace SanctionApplication
            double _apr = 0.00; 
            string _tenure = "0.00";
            decimal total_tenure;
-           MidpointRounding mode = MidpointRounding.ToEven;
+          // MidpointRounding mode = MidpointRounding.ToEven;
            string tenure = row["tenure"]?.ToString();
 
            if (repaymentFrequency == "0")
@@ -277,7 +278,7 @@ namespace SanctionApplication
            else if (repaymentFrequency == "0")
            {
                InterestRate = InterestRate / 100;
-               total_tenure = total_tenure;
+               //total_tenure = total_tenure;
                total_tenure = Math.Round(total_tenure, val, MidpointRounding.ToEven);
                repaymentFrequency = "Bulletpayment";
                PaymentPeriods = Convert.ToInt32(1);

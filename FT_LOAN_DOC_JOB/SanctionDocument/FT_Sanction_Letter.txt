@@ -175,7 +175,7 @@
                             <td style="border: 1px solid black; padding: 5px;">13</td>
                             <td style="border: 1px solid black; padding: 5px;">Rate of Annualized Other Penal Charges,
                                 if any</td>
-                            <td style="border: 1px solid black; padding: 5px;">0.0%</td>
+                            <td style="border: 1px solid black; padding: 5px;">[penal_charges] %</td>
                         </tr>
                         <tr>
                             <td

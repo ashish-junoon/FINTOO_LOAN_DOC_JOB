@@ -964,8 +964,8 @@
 				<td style="border: 1px solid #333; padding: 8px;">[disbursement_account_number]</td>
 			  </tr>
 			  <tr>
-				<td style="border: 1px solid #333; padding: 8px;">Processing Charges (Incl. GST)</td>
-				<td style="border: 1px solid #333; padding: 8px;">[processing_fees]</td>
+				<td style="border: 1px solid #333; padding: 8px;">Processing Charges </td>
+				<td style="border: 1px solid #333; padding: 8px;">[processing_fees] % </td>
 			  </tr>
 			  <tr>
 				<td style="border: 1px solid #333; padding: 8px;">Flexible Repayment Convenience Charges</td>
@@ -1114,7 +1114,7 @@
 				  </tr>
 				  <tr>
 					<td style="border: 1px solid #333; padding: 8px;">IFSC Code</td>
-					<td style="border: 1px solid #333; padding: 8px;">[ifse_code]</td>
+					<td style="border: 1px solid #333; padding: 8px;">[ifsc_code]</td>
 				  </tr>
 				  <tr>
 					<td style="border: 1px solid #333; padding: 8px;">Account Type</td>

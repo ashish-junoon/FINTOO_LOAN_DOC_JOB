@@ -44,8 +44,9 @@ namespace SanctionApplication
                     try
                     {
                         // string _rootPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
-                       
+
                         string _disbursalDocumentPath = Path.Combine(_rootPath, "DisbursalDocument");
+
 
                         logger.Info($"Disbursal Letter Root Path - {_rootPath}");
                         logger.Info($"Disbursal DocumentPath Root Path - {_disbursalDocumentPath}");
@@ -104,6 +105,7 @@ namespace SanctionApplication
                         //string rootPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
                         string agreementDocumentPath = Path.Combine(_rootPath, "AgreementDocument");
 
+
                         logger.Info($"AgreementDocument Letter Root Path - {_rootPath}");
                         logger.Info($"AgreementDocument DocumentPath Root Path - {agreementDocumentPath}");
 
@@ -117,7 +119,7 @@ namespace SanctionApplication
                             string txtFilePath = Path.Combine(agreementDocumentPath, $"{_agreement.product_name}_Agreement_letter.txt");
                             if (File.Exists(txtFilePath))
                             {
-                                string txtContent = File.ReadAllText(txtFilePath);
+                                string txtContent = File.ReadAllText(txtFilePath,System.Text.Encoding.Default);
                                 Dictionary<string, string> replacements = Agreement.AgreementGetReplacementData(_agreement);
                                 foreach (var entry in replacements)
                                 {

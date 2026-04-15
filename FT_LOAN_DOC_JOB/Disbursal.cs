@@ -135,7 +135,7 @@ namespace SanctionApplication
                     {
                         string _tenure = "0.00";
                         decimal total_tenure;
-                        MidpointRounding mode = MidpointRounding.ToEven;
+                       // MidpointRounding mode = MidpointRounding.ToEven;
                         string tenure = row["tenure"]?.ToString();
                         if (row["repayment_frequency"]?.ToString() == "0")
                         {
