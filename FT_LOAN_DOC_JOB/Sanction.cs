@@ -51,8 +51,8 @@ namespace SanctionApplication
             try
             {
                 //string rootPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
-                //string sanctionDocumentPath = Path.Combine(rootPath, "SanctionDocument");
-                string sanctionDocumentPath = "D:\\Junoon Capital\\Fynto Job\\FINTOO_LOAN_DOC_JOB\\FT_LOAN_DOC_JOB\\SanctionDocument";
+                string sanctionDocumentPath = Path.Combine(rootPath, "SanctionDocument");
+               
 
                 string txtFilePath = Path.Combine(sanctionDocumentPath, $"FT_Sanction_letter.txt");
 
