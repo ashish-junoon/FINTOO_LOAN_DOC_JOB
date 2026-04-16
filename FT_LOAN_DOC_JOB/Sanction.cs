@@ -51,7 +51,8 @@ namespace SanctionApplication
             try
             {
                 //string rootPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
-                string sanctionDocumentPath = Path.Combine(rootPath, "SanctionDocument");
+                //string sanctionDocumentPath = Path.Combine(rootPath, "SanctionDocument");
+                string sanctionDocumentPath = "D:\\Junoon Capital\\Fynto Job\\FINTOO_LOAN_DOC_JOB\\FT_LOAN_DOC_JOB\\SanctionDocument";
 
                 string txtFilePath = Path.Combine(sanctionDocumentPath, $"FT_Sanction_letter.txt");
 
@@ -140,6 +141,7 @@ namespace SanctionApplication
                 { "[ip]", string.IsNullOrEmpty(sanctionLetter.ip) ? "N/A" : sanctionLetter.ip },
                 { "[consent_otp_verified_time]", string.IsNullOrEmpty(sanctionLetter.consent_otp_verified_time) ? DateTime.Now.ToString("yyyy-MM-dd") : sanctionLetter.consent_otp_verified_time },
                 { "[repayment_date]", string.IsNullOrEmpty(sanctionLetter.repayment_date) ? DateTime.Now.ToString("yyyy-MM-dd") : sanctionLetter.repayment_date },
+                 { "[penal_charges]", string.IsNullOrEmpty(sanctionLetter.penal_charges) ? "N/A" : sanctionLetter.penal_charges },
                 { "\n", string.Empty },
                 { "\t", string.Empty },
                 { "\"", "'" }
@@ -214,7 +216,8 @@ namespace SanctionApplication
            double cgst = Convert.ToDouble(row["cgst"] ?? 0);
            double sgst = Convert.ToDouble(row["sgst"] ?? 0);
            double igst = Convert.ToDouble(row["igst"] ?? 0);
-           double total_gst_count = cgst + sgst + igst;
+            //string penal_charges = (row["penal_charge"] ?? 0).ToString();
+            double total_gst_count = cgst + sgst + igst;
            double processing_fee = Convert.ToDouble(row["processing_fee"] ?? 0);
            double insurance = Convert.ToDouble(row["insurance_fee"] ?? 0);
            string repaymentFrequency = row["repayment_frequency"]?.ToString() ?? "Monthly";
@@ -324,6 +327,7 @@ namespace SanctionApplication
                repayment_date = row["repayment_date"]?.ToString() ?? DateTime.Now.ToString("yyyy-MM-dd"),
                loan_id = row["loan_id"]?.ToString() ?? "NA",
                APR = Convert.ToString(_apr) ?? "NA",
+               penal_charges = row["penal_charge"]?.ToString() ?? "NA",
            };
        
         }
@@ -359,7 +363,7 @@ namespace SanctionApplication
         }
         public static void updatesanction(string user_id, string lead_id , string loan_id ,string sanction_letter)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["CrediCash_Dev"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             DataSet Objds = null;
             DataTable Objtable = new DataTable();
             SqlParameter[] param = new SqlParameter[4];

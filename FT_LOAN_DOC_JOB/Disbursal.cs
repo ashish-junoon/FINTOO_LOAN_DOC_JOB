@@ -220,7 +220,7 @@ namespace SanctionApplication
         }
         public static void Disbursalupdate(string user_id, string lead_id , string loan_id , string disbursal_htmlContent)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["CrediCash_Dev"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             DataSet Objds = null;
             DataTable Objtable = new DataTable();
             SqlParameter[] param = new SqlParameter[4];

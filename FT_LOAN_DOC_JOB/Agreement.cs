@@ -200,7 +200,8 @@ namespace SanctionApplication
                             aadhaar_number = row["aadhaar_number"]?.ToString() ?? "N/A",
                             name = row["full_name"]?.ToString() ?? "N/A",
                             father_name = row["father_name"]?.ToString() ?? "N/A",
-                            company_name = row["company_name"]?.ToString() ?? "N/A",
+                            penal_charges= row["penal_charge"].ToString() ??"N/A",
+                            //company_name = row["company_name"]?.ToString() ?? "N/A",
                             //company_address = row["address"]?.ToString() ?? "N/A",
                             interest_rate = decimal.TryParse(row["interest_rate"]?.ToString(), out var ir) ? ir : 0,
                             loan_amount = decimal.TryParse(row["loan_amount"]?.ToString(), out var la) ? la : 0,
@@ -220,6 +221,7 @@ namespace SanctionApplication
                             nominee_number = row["nominee_number"]?.ToString() ?? "N/A",
                             nominee_name = row["nominee_name"]?.ToString() ?? "N/A",
                             processing_fees = row["processing_fee"]?.ToString() ?? "N/A",
+                            device_used = row["device_info"]?.ToString() ?? "N/A",
                             ip = row["IP"]?.ToString() ?? "N/A",
                             user_id = row["user_id"]?.ToString() ?? "N/A",
                             lead_id = row["lead_id"]?.ToString() ?? "N/A",
@@ -270,7 +272,7 @@ namespace SanctionApplication
         }
         public static void Agreementupdateagreement(string user_id, string lead_id, string loan_id, string agreement_html_content)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["CrediCash_Dev"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             DataSet Objds = null;
             DataTable Objtable = new DataTable();
             SqlParameter[] param = new SqlParameter[4];

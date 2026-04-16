@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FT_LOAN_DOC_JOB.exe" size="93120">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FT_LOAN_DOC_JOB.exe" size="92672">
       <assemblyIdentity name="FT_LOAN_DOC_JOB" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Kuhwbln1dCXUnX63mJTK1zMcWPnxqjso8Vm1pPWy2s8=</dsig:DigestValue>
+        <dsig:DigestValue>p47NPZADymhtLTBP7UnIb4osRjR64kQKYR0G8UK/iik=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -485,13 +485,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="AgreementDocument\FT_Agreement_letter.txt" size="84831">
+  <file name="AgreementDocument\FT_Agreement_letter.txt" size="84828">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>vzyBK2EBeC3doAx90/xK7d+OrJokoH11GisiJzcp74k=</dsig:DigestValue>
+      <dsig:DigestValue>fp/WyrKW86wcz7IudXetNrp0YJ+D2uTmAmjk04JUWWI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DisbursalDocument\FT_Disbursal_letter.txt" size="3138">
@@ -521,13 +521,13 @@
       <dsig:DigestValue>DpndweLdTfbcrwcloTBHIwwEP5Dy7O99SEv4m6YjgKs=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SanctionDocument\FT_Sanction_Letter.txt" size="18789">
+  <file name="SanctionDocument\FT_Sanction_Letter.txt" size="18828">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>kX+Svvi/saoOkXgMUBztnZY5CzNBIH4HJfMk+HKxcWk=</dsig:DigestValue>
+      <dsig:DigestValue>jbDIy3zAVPh3CeguPuNaZEoU7byvBNtVel5JbIE0v4Y=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

@@ -22,7 +22,7 @@ namespace SanctionApplication
         #region SendEmailCombined logic ----------------*********
         public static void SendEmailCombined(string connectionString, InformationModel informationModels)
         {
-            string _rootPath = ConfigurationManager.AppSettings["RootDirectory"].ToString();
+            string _rootPath = "D:\\Junoon Capital\\Fynto Job\\FINTOO_LOAN_DOC_JOB"; //ConfigurationManager.AppSettings["RootDirectory"].ToString();
             try
             {
                 if (!string.IsNullOrEmpty(connectionString))
@@ -45,8 +45,8 @@ namespace SanctionApplication
                     {
                         // string _rootPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
 
-                        string _disbursalDocumentPath = Path.Combine(_rootPath, "DisbursalDocument");
-
+                        //string _disbursalDocumentPath = Path.Combine(_rootPath, "DisbursalDocument");
+                        string _disbursalDocumentPath = "D:\\Junoon Capital\\Fynto Job\\FINTOO_LOAN_DOC_JOB\\FT_LOAN_DOC_JOB\\DisbursalDocument";
 
                         logger.Info($"Disbursal Letter Root Path - {_rootPath}");
                         logger.Info($"Disbursal DocumentPath Root Path - {_disbursalDocumentPath}");
@@ -103,8 +103,8 @@ namespace SanctionApplication
                     try
                     {
                         //string rootPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
-                        string agreementDocumentPath = Path.Combine(_rootPath, "AgreementDocument");
-
+                        //string agreementDocumentPath = Path.Combine(_rootPath, "AgreementDocument");
+                        string agreementDocumentPath = "D:\\Junoon Capital\\Fynto Job\\FINTOO_LOAN_DOC_JOB\\FT_LOAN_DOC_JOB\\AgreementDocument";
 
                         logger.Info($"AgreementDocument Letter Root Path - {_rootPath}");
                         logger.Info($"AgreementDocument DocumentPath Root Path - {agreementDocumentPath}");

@@ -38,6 +38,6 @@ namespace SanctionApplication
         public string loan_id { get; set; }
         public string APR { get; set; }
 
-
+        public string penal_charges { get; set; }
     }
 }
